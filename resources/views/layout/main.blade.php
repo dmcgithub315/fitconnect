@@ -35,7 +35,7 @@
             <div class="col-lg-12">
                 <div class="main-menu">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="{{route('home')}}">
                             <img src="/assets/img/logo_fitconnect.png" width="100" height="100" alt="">
                         </a>
                     </div>
@@ -45,7 +45,7 @@
                             <li><a href="./about-us.html">About us</a></li>
                             <li><a href="{{route('classes')}}">Classes</a></li>
                             <li><a href="{{route('trainers')}}">Trainers</a></li>
-                            <li><a href="./blog.html">News</a></li>
+                            <li><a href="{{route('exercises')}}">Exercises</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                             <li class="search-btn search-trigger">
                                 <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal_login">
@@ -315,7 +315,7 @@
                     </div>
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="{{route('home')}}">Home</a></li>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Classes</a></li>
                             <li><a href="#">Instructors</a></li>

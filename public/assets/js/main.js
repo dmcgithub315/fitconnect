@@ -175,4 +175,8 @@ $(document).ready(function(){
         $('.box_chat').removeClass('d-none');
         $('.open_chat').addClass('d-none');
     });
+    $('.open_chat_btn').click(function(){
+        $('.box_chat').removeClass('d-none');
+        $('.open_chat').addClass('d-none');
+    });
 });

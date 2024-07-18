@@ -17,3 +17,5 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/trainers', [HomeController::class, 'trainers'])->name('trainers');
 Route::get('/trainer', [HomeController::class, 'trainerDetails'])->name('trainer_details');
 Route::get('/classes', [HomeController::class, 'classes'])->name('classes');
+Route::get('/exercises', [HomeController::class, 'exercises'])->name('exercises');
+Route::get('/exercise', [HomeController::class, 'exerciseDetails'])->name('exercise_details');

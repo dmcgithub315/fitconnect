@@ -33,9 +33,9 @@
                                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvFbLRAkvIhiVBNYwuccndqqn8fGgE-OoxbZykTbuswZbO2HaS5sdb2-m67lv15z1Ly2x2W1Hgd_GmcXf4f3CF8vYM74vd9_zaLQ8P2Ek9fcfHCvl9J2INcZ20vRSeNAQGsWZUylE8_3w/s640/pt-la-gi.jpg" class="img-trainer" alt="">
                             </div>
                         </div>
-                        <div class="trainer-title mb-2">Đang sẵn sàng</div>
-                        <div class="trainer-desc mb-4"><span class="joining-date-text">Ngày tham gia:</span> 18/07/2022</div>
-                        <div class="achievements-trainer border-bottom">Thành Tích</div>
+                        <div class="trainer-title mb-2">Ready</div>
+                        <div class="trainer-desc mb-4"><span class="joining-date-text">Join date:</span> 18/07/2024</div>
+                        <div class="achievements-trainer border-bottom">Achievements</div>
                     </div>
                     <div class="trainer-profile-main col-6 my-3">
                         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -70,9 +70,6 @@
                             <div class="btn btn-choose-category mr-3">
                                 <div class="trainer_desc">Pilates</div>
                             </div>
-                            <div class="btn btn-choose-category mr-3">
-                                <div class="trainer_desc">Lựa chọn khác</div>
-                            </div>
                         </div>
                         <div class="my-3 border-bottom"></div>
                         <div class="profile-detail">
@@ -84,15 +81,17 @@
                         </div>
                     </div>
                     <div class="trainer-profile-right col-3 my-3 ">
-                    <div class="price-text">200,000 đ/n</div>
+                    <div class="price-text">1 tokens/h</div>
                     <div class="evaluate d-flex align-content-center">
                         <i><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></i>
                         <i><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></i>
                         <i><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></i>
-                        <div class="evaluate-item">130 đánh giá</div>
+                        <i><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></i>
+                        <i><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></i>
+                        <div class="evaluate-item">130 reviews</div>
                     </div>
-                    <div class="btn btn-rent my-2">Thuê</div>
-                    <div class="btn btn-chat my-2">Tư vấn</div>
+                    <div class="btn btn-rent my-2 open_chat_btn">Choose</div>
+                    <div class="btn btn-chat my-2 open_chat_btn">Chat</div>
                     </div>
                 </div>
             </div>

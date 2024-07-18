@@ -216,7 +216,7 @@
                         <div class="membership-details">
                             <div class="up-title">
                                 <span>Next</span>
-                                <h5>Membership Cards</h5>
+                                <h5>Premium Member</h5>
                             </div>
                             <div class="discount">
                                 <h1>25% <span>Discount</span></h1>

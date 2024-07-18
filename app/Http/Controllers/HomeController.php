@@ -18,6 +18,10 @@ class HomeController extends Controller
     {
         return view('pages.trainer_details');
     }
+    function exerciseDetails(Request $request)
+    {
+        return view('pages.exercise_details');
+    }
 
     function register(Request $request) {
         $fullName = $request->input('fullName');
@@ -29,6 +33,10 @@ class HomeController extends Controller
     function classes(Request $request)
     {
         return view('pages.classes');
+    }
+    function exercises(Request $request)
+    {
+        return view('pages.exercises');
     }
 
     function login(Request $request) {
