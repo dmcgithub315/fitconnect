@@ -2569,7 +2569,18 @@ ol {
     background-size: cover;
     background-position: center;
 }
-
+.trainer-bg-img{
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-trainer{
+    width: 240px;
+    height: 220px;
+    border-radius: 10px;
+}
 .trainer_info {
     padding: 5px 10px;
 }
@@ -2581,3 +2592,108 @@ ol {
 .trainer_desc {
     font-size: 13px;
 }
+.trainer-title{
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.trainer-desc{
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.joining-date-text{
+    color: #34495e;
+    font-size: 14px;
+    font-weight: 400;
+}
+.achievements-trainer{
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.btn-favourite{
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+}
+.btn-favourite div{
+    font-size: 14px;
+    font-weight: 700;
+}
+.trainer-profile-main .trainer_name{
+    font-size: 24px;
+    font-weight: 700;
+}
+.profile-main-text{
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+.profile-main-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #e74c3c;
+}
+.btn-choose-category{
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid black;
+}
+.choose-category-item{
+    padding: 4px 6px;
+    font-weight: 700;
+}
+.profile-detail h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.profile-detail-item{
+    color: #354052;
+    font-size: 16px;
+    font-weight: 400;
+}
+.trainer-profile-right{
+    border: 1px solid #e2e6ea;
+    border-radius: 15px;
+    height: fit-content;
+    padding: 10px;
+    width: 100%;
+}
+.price-text{
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: 700;
+}
+.evaluate-item{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.btn-rent{
+    width: 100%;
+    background-color: #f0564a;
+    text-align: center;
+    padding: 10px 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.btn-chat{
+    width: 100%;
+    border: 1px solid #e2e6ea;
+    color: #354052;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
