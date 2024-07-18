@@ -25,31 +25,6 @@
     </section>
     <section class="contact-section">
         <div class="container">
-            <div class="trainer_filters mt-3">
-                <select name="gender" class="filter_select" id="">
-                    <option selected>Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <select name="" class="filter_select" id="">
-                    <option selected>Class</option>
-                    <option value="gym">Gym</option>
-                    <option value="yoga">Yoga</option>
-                    <option value="pilates">Pilates</option>
-                </select>
-                <select name="" class="filter_select" id="">
-                    <option selected>City</option>
-                    <option value="hanoi">Ha Noi</option>
-                    <option value="hcm">Ho Chi Minh City</option>
-                    <option value="danang">Da Nang</option>
-                    <option value="haiphong">Hai Phong</option>
-                </select>
-                <input type="text" class="trainer_name_input" placeholder="Trainer Name">
-                <button class="btn float-right filter-button" style="font-size: 13px">
-                    <i class="fa fa-search"></i>
-                    <span>Search</span>
-                </button>
-            </div>
             <div class="trainers_list">
                 <div class="row">
                     <div class="trainer-profile-left col-3 my-3">

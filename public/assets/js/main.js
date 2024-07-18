@@ -166,3 +166,13 @@
 
 
 })(jQuery);
+$(document).ready(function(){
+    $('.close_chat').click(function(){
+        $('.box_chat').addClass('d-none');
+        $('.open_chat').removeClass('d-none');
+    });
+    $('.open_chat').click(function(){
+        $('.box_chat').removeClass('d-none');
+        $('.open_chat').addClass('d-none');
+    });
+});
