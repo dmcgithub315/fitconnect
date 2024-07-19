@@ -24133,17 +24133,8 @@
                     <svg width="24" height="24" viewBox="0 0 24 24" class="arrow-back_arrowBack__9gGyw header-back-button_arrowBack__DnRKT">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.414 10.657L3.071 11 2 12.071l1.414 1.414 6.364 6.364a1 1 0 101.414-1.414L5.757 13h14.314a1 1 0 100-2H5.9l5.293-5.293a1 1 0 00-1.414-1.414l-6.364 6.364z"></path>
                     </svg>
-                    <img src="https://res.cloudinary.com/drhg6wpcy/image/upload/f_auto/q_auto:eco/fl_lossy/c_fit,w_auto/d4gtqxv9po65lzmjrkoh" sizes="
-    (min-width: 1024px) and (min-resolution: 2.9x) calc(150px * 0.66),
-    (min-width: 1024px) 150px,
-
-    (min-width: 375px) and (min-resolution: 2.9x) calc(100px * 0.66),
-    (min-width: 375px) 100px,
-    (min-width: 1px) and (min-resolution: 2.9x) calc(100px * 0.66),
-    (min-width: 1px) 100px,
-  "
-                         srcset="https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_50/d4gtqxv9po65lzmjrkoh 50w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_500/d4gtqxv9po65lzmjrkoh 500w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_100/d4gtqxv9po65lzmjrkoh 100w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_150/d4gtqxv9po65lzmjrkoh 150w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_200/d4gtqxv9po65lzmjrkoh 200w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_250/d4gtqxv9po65lzmjrkoh 250w"
-                         alt="" class="header-brand-palette-with-progress_logo__eG9cx"></div>
+                    <img src="/assets/img/logo_text.png" width="200" height="40" alt="">
+                </div>
                 <p class="typography_typographyBase__eIjIH typography_labelMDSemiBold__qx8cx header-brand-palette-with-progress_label__gYiTh">My Profile</p>
                 <button class="burger-button_container__2fBXf header-brand-palette-with-progress_burgerButton__AXsp8" data-button="burger-menu"><span class="burger-button_dash__h1gug"></span><span class="burger-button_dash__h1gug"></span><span class="burger-button_dash__h1gug"></span></button>
                 <div class="header-brand-palette-with-progress_desktopProgress__a8S__">

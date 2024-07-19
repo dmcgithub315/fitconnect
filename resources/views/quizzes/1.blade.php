@@ -24448,18 +24448,8 @@
         <div class="page_pageContainer__v4QtI" data-page="general" data-page-test="firstPage_3221" id="page"
              style="background: var(--backgroundPrimaryColor);">
             <div class="header-brand-palette_container__pNnbO header-brand-palette_spaceBetween__zdbJq">
-                <div class="header-brand-palette_logoContainer__T9Y63 header-brand-palette_left__L79zz"><img
-                        class="cloudinary-image_image__gAegU header-brand-palette_logo__p6TDE" alt="BetterMe logo" sizes="
-
-    (min-width: 768px) and (min-resolution: 2.9x) calc(118px * 0.66),
-    (min-width: 768px) 118px,
-    (min-width: 375px) and (min-resolution: 2.9x) calc(86px * 0.66),
-    (min-width: 375px) 86px,
-    (min-width: 1px) and (min-resolution: 2.9x) calc(86px * 0.66),
-    (min-width: 1px) 86px,
-  "
-                        srcset="https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_80/d4gtqxv9po65lzmjrkoh 80w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_1920/d4gtqxv9po65lzmjrkoh 1920w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_160/d4gtqxv9po65lzmjrkoh 160w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_240/d4gtqxv9po65lzmjrkoh 240w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_384/d4gtqxv9po65lzmjrkoh 384w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_512/d4gtqxv9po65lzmjrkoh 512w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_720/d4gtqxv9po65lzmjrkoh 720w, https://res.cloudinary.com/drhg6wpcy/image/upload/f_webp/q_auto:eco/fl_lossy/c_fit,w_960/d4gtqxv9po65lzmjrkoh 960w"
-                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/f_auto/q_auto:eco/fl_lossy/c_fit,w_auto/d4gtqxv9po65lzmjrkoh">
+                <div class="header-brand-palette_logoContainer__T9Y63 header-brand-palette_left__L79zz">
+                    <img src="/assets/img/logo_text.png" width="200" height="40" alt="">
                 </div>
                 <button class="burger-button_container__2fBXf header-brand-palette_burgerButton__7EnAB"
                         data-button="burger-menu"><span class="burger-button_dash__h1gug"></span><span
