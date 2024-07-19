@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/assets/css/barfiller.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo_fitconnect.png">
     @yield('style')
 </head>
 
@@ -42,11 +43,11 @@
                     <nav class="mobile-menu">
                         <ul>
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li><a href="./about-us.html">About us</a></li>
+                            <li><a href="{{route('about')}}">About us</a></li>
                             <li><a href="{{route('classes')}}">Classes</a></li>
                             <li><a href="{{route('trainers')}}">Trainers</a></li>
                             <li><a href="{{route('exercises')}}">Exercises</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
                             <li class="search-btn search-trigger">
                                 <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal_login">
                                     <img src="/assets/img/icons/user.svg" width="24" height="24" alt="">
@@ -300,7 +301,7 @@
 
     </div>
 </section>
-<button class="open_chat">
+<button class="open_chat d-none">
     <img src="/assets/img/chat.svg" width="50" height="50" alt="">
 </button>
 

@@ -14,6 +14,14 @@ class HomeController extends Controller
     {
         return view('pages.trainers');
     }
+    function contact(Request $request)
+    {
+        return view('pages.contact');
+    }
+    function about(Request $request)
+    {
+        return view('pages.about');
+    }
     function trainerDetails(Request $request)
     {
         return view('pages.trainer_details');
@@ -33,6 +41,14 @@ class HomeController extends Controller
     function classes(Request $request)
     {
         return view('pages.classes');
+    }
+    function premium(Request $request)
+    {
+        return view('pages.premium');
+    }
+    function schedule(Request $request)
+    {
+        return view('pages.schedule');
     }
     function exercises(Request $request)
     {

@@ -228,12 +228,18 @@
                     <div class="member-sign-up set-bg" data-setbg="/assets/img/signup-bg.jpg">
                         <div class="up-title">
                             <span>New</span>
-                            <h5>Personal Trainer</h5>
+                            <h5>Premium Member</h5>
                         </div>
-                        <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis nulla
-                            pretium.Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl
-                            quis nulla pretium.</p>
-                        <div class="member-signup-btn">
+
+                        <ul class="text-white">
+                            <li>Remove ads</li>
+                            <li>Trainer Selection</li>
+                            <li>Nutrition and personal training</li>
+                            <li>Nutrition Tracking</li>
+                            <li>Activity Tracking</li>
+                            <li>Body Tracking</li>
+                        </ul>
+                        <div class="member-signup-btn mt-5">
                             <a href="#" class="primary-btn">Sign up Now</a>
                         </div>
                     </div>

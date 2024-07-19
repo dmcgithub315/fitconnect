@@ -16,7 +16,7 @@
                         <h2>Contact</h2>
                         <div class="links">
                             <a href="{{route('home')}}">Home</a>
-                            <a href="{{route('login')}}" class="rt-breadcrumb">Contact</a>
+                            <a href="{{route('contact')}}" class="rt-breadcrumb">Contact</a>
                         </div>
                     </div>
                 </div>

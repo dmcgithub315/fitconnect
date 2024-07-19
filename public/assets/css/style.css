@@ -2789,3 +2789,11 @@ ol {
     right: 15vw;
     bottom: 12vh;
 }
+
+.schedule_table span {
+    font-size: 12px;
+}
+
+.schedule_table div {
+    font-weight: 600;
+}
