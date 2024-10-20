@@ -2797,3 +2797,223 @@ ol {
 .schedule_table div {
     font-weight: 600;
 }
+
+/* Tùy chỉnh giao diện của form */
+.trainers_list form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+/* Nút bấm Calculate */
+.trainers_list form button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Kết quả BMI */
+.bmi_result h4 {
+    color: #343a40;
+    font-weight: 600;
+}
+
+.bmi_result p {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* Lời khuyên */
+.bmi_result h4:last-of-type {
+    margin-top: 30px;
+    color: #28a745;
+}
+
+.bmi_result p:last-of-type {
+    font-size: 1rem;
+    color: #28a745;
+}
+
+/* Thêm shadow và padding cho form */
+.trainers_list form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Khoảng cách giữa các nhãn và input */
+.form-group label {
+    margin-bottom: 5px;
+}
+
+/* Khoảng cách giữa các phần tử trong phần kết quả */
+.bmi_result h4, .bmi_result p {
+    margin-bottom: 15px;
+}
+
+.calorie_calculator {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calorie_calculator h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calorie_calculator label {
+    font-weight: bold;
+    color: #555;
+}
+
+.calorie_calculator input, .calorie_calculator select {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.calorie_calculator input:focus, .calorie_calculator select:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.calorie_calculator button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.calorie_calculator button:hover {
+    background-color: #0056b3;
+}
+
+.calorie_result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calorie_result h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.calorie_result p, .calorie_result ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.calorie_result ul {
+    list-style: none;
+    padding: 0;
+}
+
+.calorie_result ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.tdee_calculator {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tdee_calculator h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tdee_calculator label {
+    font-weight: bold;
+    color: #555;
+}
+
+.tdee_calculator input, .tdee_calculator select {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.tdee_calculator input:focus, .tdee_calculator select:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.tdee_calculator button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tdee_calculator button:hover {
+    background-color: #0056b3;
+}
+
+.tdee_result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tdee_result h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.tdee_result p, .tdee_result ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tdee_result ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tdee_result ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+ .meal-card {
+     margin-bottom: 30px;
+ }
+.meal-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 360px;
+}
+
+

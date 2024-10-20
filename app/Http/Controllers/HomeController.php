@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Meal;
+use Auth;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -9,10 +11,6 @@ class HomeController extends Controller
     function home(Request $request)
     {
         return view('home.home');
-    }
-    function trainers(Request $request)
-    {
-        return view('pages.trainers');
     }
     function contact(Request $request)
     {
@@ -38,10 +36,49 @@ class HomeController extends Controller
         $password = $request->input('password');
 
     }
-    function classes(Request $request)
+    public function meals(Request $request)
     {
-        return view('pages.classes');
+        $user = Auth::user();
+        if(!$user || !$user->premium) {
+            return redirect()->route('about');
+        }
+        $dailyCalories = $user->daily_calories;
+
+        // Tính toán calories cho từng bữa ăn
+        $breakfastCalories = $dailyCalories * 0.3; // 30%
+        $lunchCalories = $dailyCalories * 0.4; // 40%
+        $dinnerCalories = $dailyCalories * 0.3; // 30%
+
+        // Lấy dữ liệu bữa ăn từ bảng meals
+        $meals = Meal::all();
+
+        // Lọc theo meal_type trước khi tìm bữa ăn gần nhất
+        $breakfastMeals = $meals->where('meal_type', 'breakfast');
+        $lunchMeals = $meals->where('meal_type', 'lunch');
+        $dinnerMeals = $meals->where('meal_type', 'dinner');
+
+        // Tìm bữa ăn gần nhất với calories đã tính toán
+        $breakfast = $this->findClosestMeal($breakfastMeals, $breakfastCalories);
+        $lunch = $this->findClosestMeal($lunchMeals, $lunchCalories);
+        $dinner = $this->findClosestMeal($dinnerMeals, $dinnerCalories);
+
+        $plans = [$breakfast, $lunch, $dinner];
+
+        // Trả về view với thông tin bữa ăn
+        return view('pages.calories', compact('user', 'breakfast', 'lunch', 'dinner', 'plans', 'dailyCalories'));
     }
+
+    private function findClosestMeal($meals, $targetCalories)
+    {
+        // Tìm bữa ăn gần nhất
+        $closestMeal = $meals->sortBy(function ($meal) use ($targetCalories) {
+            return abs($meal->calories - $targetCalories);
+        })->first(); // Lấy bữa ăn gần nhất
+
+        return $closestMeal;
+    }
+
+
     function premium(Request $request)
     {
         return view('pages.premium');
@@ -52,7 +89,8 @@ class HomeController extends Controller
     }
     function exercises(Request $request)
     {
-        return view('pages.exercises');
+        $user = Auth::user();
+        return view('pages.bmi', compact('user'));
     }
 
     function login(Request $request) {

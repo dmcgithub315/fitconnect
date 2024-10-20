@@ -7,7 +7,7 @@
     <meta name="keywords" content="TopGym, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
+    <title>@yield('title') | FitConnect</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
@@ -44,14 +44,19 @@
                         <ul>
                             <li><a href="{{route('home')}}">Home</a></li>
                             <li><a href="{{route('about')}}">About us</a></li>
-                            <li><a href="{{route('classes')}}">Classes</a></li>
-                            <li><a href="{{route('trainers')}}">Trainers</a></li>
-                            <li><a href="{{route('exercises')}}">Exercises</a></li>
+                            <li><a href="{{route('meals')}}">Meal plans</a></li>
+                            <li><a href="{{route('exercises')}}">BMI Calculate</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
                             <li class="search-btn search-trigger">
-                                <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal_login">
-                                    <img src="/assets/img/icons/user.svg" width="24" height="24" alt="">
-                                </button>
+                                @if(Auth::check())
+                                    <a href="{{ route('profile') }}" class="bg-transparent border-0">
+                                        <img src="/assets/img/icons/user.svg" width="24" height="24" alt="User Profile">
+                                    </a>
+                                @else
+                                    <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal_login">
+                                        <img src="/assets/img/icons/user.svg" width="24" height="24" alt="Login">
+                                    </button>
+                                @endif
                             </li>
                         </ul>
                     </nav>
@@ -164,15 +169,6 @@
                         <div class="mb-2">
                             <label for="" class="form-label" style="font-size: 10px; color: #A8CDFF;">{{__('Full Name')}}</label>
                             <input type="text" class="form-control py-3" name="fullName" id="fullName" style="background-color: #293244; border: none;" placeholder="{{__('Enter your first name')}}" value="">
-                        </div>
-                        <div class="mb-2">
-                            <label for="" class="form-label" style="font-size: 10px; color: #A8CDFF;">{{__('Role')}}</label>
-                            <select name="role" class="custom-select" id="inputGroupSelect01" style="background-color: #293244; color: #ffffff; border: none;">
-                                <option selected>Choose...</option>
-                                <option value="clients">User</option>
-                                <option value="trainer">Trainer</option>
-                            </select>
-{{--                            <input type="text" class="form-control py-3" name="last_name" id="last_name" style="background-color: #293244; border: none;" placeholder="{{__('Enter your last name')}}">--}}
                         </div>
                         <div class="mb-2">
                             <label for="" class="form-label" style="font-size: 10px; color: #A8CDFF;">Email</label>
@@ -362,6 +358,56 @@
 <script src="/assets/js/jquery.barfiller.js"></script>
 <script src="/assets/js/main.js"></script>
 @yield('script')
+<script>
+    $('#btn-login').click(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "{{ route('login') }}",
+            method: "POST",
+            data: {
+                email: $('#email_login').val(),
+                password: $('#password_login').val(),
+                _token: "{{ csrf_token() }}"
+            },
+            success: function(response) {
+                if (response.success) {
+                    alert(response.message);
+                    window.location.reload();
+                } else {
+                    $('.sign_in_message').text(response.message);
+                }
+            },
+            error: function(xhr) {
+                $('.sign_in_message').text('Invalid credentials');
+            }
+        });
+    });
+    $('#sign_up_btn').click(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "{{ route('register') }}",
+            method: "POST",
+            data: {
+                fullName: $('#fullName').val(),
+                email: $('#email_register').val(),
+                password: $('#password_register').val(),
+                _token: "{{ csrf_token() }}"
+            },
+            success: function(response) {
+                if (response.success) {
+                    alert(response.message);
+                    window.location.reload();
+                } else {
+                    $('.check_password').text(response.message);
+                }
+            },
+            error: function(xhr) {
+                $('.check_password').text('Registration failed');
+            }
+        });
+    });
+
+</script>
 </body>
 
 </html>

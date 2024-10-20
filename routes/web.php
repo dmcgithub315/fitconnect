@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,13 +16,20 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
 Route::get('/', [HomeController::class, 'home'])->name('home');
-Route::get('/trainers', [HomeController::class, 'trainers'])->name('trainers');
+Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
+Route::post('/save-profile', [ProfileController::class, 'saveProfile'])->name('save.profile');
+
 Route::get('/trainer', [HomeController::class, 'trainerDetails'])->name('trainer_details');
-Route::get('/classes', [HomeController::class, 'classes'])->name('classes');
+Route::get('/meals', [HomeController::class, 'meals'])->name('meals');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/exercises', [HomeController::class, 'exercises'])->name('exercises');
+Route::get('/bmi', [HomeController::class, 'exercises'])->name('exercises');
 Route::get('/exercise', [HomeController::class, 'exerciseDetails'])->name('exercise_details');
 Route::get('/premium', [HomeController::class, 'premium'])->name('premium');
 Route::get('/schedule', [HomeController::class, 'schedule'])->name('schedule');
