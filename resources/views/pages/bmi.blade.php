@@ -30,11 +30,11 @@
                     <div class="row mb-4" style="text-align: center;">
                         <div class="col-md-6">
                             <label class="font-weight-bold" for="height">Height (cm):</label>
-                            <input class="form-control" id="height" type="number" placeholder="Input your height" value="{{$user->height}}">
+                            <input class="form-control" id="height" type="number" placeholder="Input your height" value="{{ isset($user) && $user->height ? $user->height : 0 }}">
                         </div>
                         <div class="col-md-6">
                             <label class="font-weight-bold" for="weight">Weight (kg):</label>
-                            <input class="form-control" id="weight" type="number" placeholder="Input your weight" value="{{$user->weight}}">
+                            <input class="form-control" id="weight" type="number" placeholder="Input your weight" value="{{ isset($user) && $user->weight ? $user->weight : 0 }}">
                         </div>
                     </div>
                     <button class="btn btn-primary btn-block font-weight-bold" type="submit">Calculate</button>
@@ -104,6 +104,7 @@
                 <p>${minWeight} kilograms</p>
                 <h4>Advice for you:</h4>
                 <p>${advice}</p>
+                <a href="{{route('pricing')}}">See more about nutritional meals</a>
             `);
                 } else {
                     alert('Please enter both height and weight.');

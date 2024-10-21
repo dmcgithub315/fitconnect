@@ -127,7 +127,7 @@
                             <li>Body Tracking</li>
                         </ul>
                         <div class="member-signup-btn mt-5">
-                            <a href="#" class="primary-btn">Sign up Now</a>
+                            <a href="{{route('pricing')}}" class="primary-btn">Sign up Now</a>
                         </div>
                     </div>
                 </div>

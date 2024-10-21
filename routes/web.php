@@ -29,12 +29,10 @@ Route::get('/trainer', [HomeController::class, 'trainerDetails'])->name('trainer
 Route::get('/meals', [HomeController::class, 'meals'])->name('meals');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
+Route::get('/payment/{package}', [HomeController::class, 'payment'])->name('payment');
+Route::get('/check-payment/{transactionCode}', [HomeController::class, 'checkPayment']);
 Route::get('/bmi', [HomeController::class, 'exercises'])->name('exercises');
 Route::get('/exercise', [HomeController::class, 'exerciseDetails'])->name('exercise_details');
 Route::get('/premium', [HomeController::class, 'premium'])->name('premium');
 Route::get('/schedule', [HomeController::class, 'schedule'])->name('schedule');
-Route::get('/quiz/1', [QuizController::class, 'page1'])->name('quiz_1');
-Route::get('/quiz/2', [QuizController::class, 'page2'])->name('quiz_2');
-Route::get('/quiz/3', [QuizController::class, 'page3'])->name('quiz_3');
-Route::get('/quiz/4', [QuizController::class, 'page4'])->name('quiz_4');
-Route::get('/quiz/5', [QuizController::class, 'page5'])->name('quiz_5');

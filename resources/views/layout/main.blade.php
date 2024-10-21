@@ -42,11 +42,13 @@
                     </div>
                     <nav class="mobile-menu">
                         <ul>
-                            <li><a href="{{route('home')}}">Home</a></li>
+{{--                            <li><a href="{{route('home')}}">Home</a></li>--}}
                             <li><a href="{{route('about')}}">About us</a></li>
+                            <li><a href="{{route('pricing')}}">Pricing</a></li>
                             <li><a href="{{route('meals')}}">Meal plans</a></li>
                             <li><a href="{{route('exercises')}}">BMI Calculate</a></li>
-                            <li><a href="{{route('contact')}}">Contact</a></li>
+                            <li><a href="{{route('about')}}">Nutrition Handbook</a></li>
+{{--                            <li><a href="{{route('contact')}}">Contact</a></li>--}}
                             <li class="search-btn search-trigger">
                                 @if(Auth::check())
                                     <a href="{{ route('profile') }}" class="bg-transparent border-0">
